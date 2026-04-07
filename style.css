@@ -1,0 +1,183 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Betania+Patmos&family=Playwrite+IE:wght@100..400&display=swap');
+@font-face {
+    font-family: 'Android';
+    src: url('fontes/IDroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --fonte-padrao: 'Arial', 'Helvetica', 'Verdana', sans-serif;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+    --fonte-android: 'Android';
+}
+
+body {
+    background-color: #57dfbd;
+    font-family: sans-serif;
+    font-family: var(--fonte-padrao);
+    
+}
+
+.external::after {
+    content: '\1F517';
+}
+/*_________________________________________________________________________________*/
+header {
+    background-image: linear-gradient(to bottom, #38c093, #06703f);
+    min-height: 150px;  
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 30px;
+    color: white;  
+    font-weight: normal;
+    font-family: var(--fonte-destaque);
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+header > p {
+    color: white;
+    font-size: 1em;
+    padding-top: 30px;
+    font-family: var(--fonte-padrao);
+}
+/*_________________________________________________________________________________*/
+nav {
+    background-color: #06703f;
+    padding: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    transition-duration: 1s;/*COntrola o tempo de transicao entre os elementos*/
+}
+
+nav > a:hover {
+    background-color: #2ddf8c;
+    border-radius: 5px;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+}
+/*_________________________________________________________________________________*/
+main {
+    background-color: white;
+    margin: auto;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.377) ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main img {
+    width: 100%;    
+}
+
+main img.pequena {
+    display: block;
+    margin: auto;
+    max-width: 350px;
+}
+
+main p {
+    margin: 15px 0px 15px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+main a {
+    color: #06703f;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #2ddf8c;
+    padding: 4px;
+
+}
+/*_________________________________________________________________________________*/
+section > h2 {
+    margin-bottom: 1px;
+    font-family: var(--fonte-android);
+    color: #0b2b1b;
+}
+
+section > h3 {
+    margin-bottom: 1px;
+    font-family: var(--fonte-android);
+    color: #2e7e57;
+    background-image: linear-gradient(to right, rgb(184, 250, 184), transparent);
+}
+/*_________________________________________________________________________________*/
+aside {
+    background-color: #a8f0d8;
+    border-radius: 7px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.459);
+    padding: 10px;
+}
+
+aside > h3 {
+    background-color: #0eb366;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    color: white;
+    margin: -10px -10px 0px -10px;
+    padding: 10px;
+}
+
+aside > p {
+    text-align: justify;
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+/*_________________________________________________________________________________*/
+footer {
+    color: white;
+    background-color: #044124;
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 15px;
+    padding: 6px;
+}
+/*_________________________________________________________________________________*/
+#fundo {
+    background-color: #044124;
+    width: 100%;
+    height: 380px;
+    margin: 0px;
+}
+
+#img2 {
+   width: 100%;
+}
+
+div.video {
+    background-color: #044124;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 59%;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+}
